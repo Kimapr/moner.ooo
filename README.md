@@ -1,4 +1,4 @@
-![Favicon - moner.ooo](/img/favicon-152x152.png)
+![Favicon - moner.ooo](/public/img/favicon-152x152.png)
 
 # Revuo Monero Calc
 
@@ -117,17 +117,16 @@ return [
 ];
 ```
 
-Create a `secrets.php` file in the root directory to store CoinGecko API keys. Example:
+Create a `secrets.php` file in the root directory to store CoinGecko API keys. `use_api_key` can be set to false for testing locally. Example:
 
 ```php
 <?php
 return [
 	'coingecko_api_key' => 'CG-xxxx',
 	'coingecko_key_is_demo' => true,
+	'use_api_key' => true,
 ];
 ```
-
-**Note:** The `secrets.dist.php` file should not be accessible from the web server.
 
 ### Fetching Exchange Rates
 
