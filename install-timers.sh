@@ -31,6 +31,7 @@ for ex in coingecko haveno; do
 			"Description=Periodic $ex ticker update for moner.ooo" \
 			'' \
 			'[Timer]' \
+			'OnBootSec=5min' \
 			'OnUnitActiveSec=5' \
 			'' \
 			'[Install]' \
